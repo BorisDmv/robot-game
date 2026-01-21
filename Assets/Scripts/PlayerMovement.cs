@@ -60,7 +60,6 @@ public class PlayerMovement : MonoBehaviour
         if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-            animator.SetTrigger("Jump");
         }
 
         // 5. Physics & Gravity
